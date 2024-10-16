@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #87A2FF;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header .logo img {
+    font-size: 24px;
+    color: white;
+    width: 20px;
+    heigth: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.main-content .intro {
+    max-width: 400px;
+}
+
+.main-content .intro h1 {
+    font-size: 32px;
+}
+
+.main-content .intro p {
+    margin: 20px 0;
+}
+
+.main-content button {
+    background-color: #C4D7FF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.image img {
+    max-width: 300px;
+    height: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.info div {
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* New Curriculum Section */
+.curriculum {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.curriculum h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* New Teachers Section */
+.teachers {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.teachers h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.teacher-card {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.teacher-card img{
+     widh:100px;
+     height:100px;
+     border-radius: auto;
+     object-fit: cover;
+     margin-bottom:5px;
+
+}
+
+ * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+.contact-follow {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #BCF2F6;
+    padding: 50px 0;
+}
+
+.contact, .follow {
+    width: 40%;
+    text-align: left;
+}
+
+.contact h3, .follow h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #4cae4c;
+}
+
+.follow ul {
+    list-style: none;
+}
+
+.follow li {
+    margin-bottom: 15px;
+}
+
+.follow a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.follow a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #33a1a1;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
